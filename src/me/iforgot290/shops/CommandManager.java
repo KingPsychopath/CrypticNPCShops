@@ -53,7 +53,7 @@ public class CommandManager implements Listener{
 				sendHelp(player);
 				return;
 			}
-			if (!player.isOp()){
+			if (!player.hasPermission("crypticnpcshops.create")){
 				player.sendMessage(ChatColor.RED+"Permission denied");
 				return;
 			}
@@ -149,7 +149,7 @@ public class CommandManager implements Listener{
 	}
 
 	public void sendHelp(Player sender){
-		sender.sendMessage("Test");
+		sender.sendMessage(ChatColor.RED+"Error: Incorrect usage (/shops create <name>");
 	}
 
 }

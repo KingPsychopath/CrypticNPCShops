@@ -1,4 +1,4 @@
-name: Shops
+name: CrypticNPCShops
 main: me.iforgot290.shops.Shops
 version: 1.0
 depend: [RemoteEntities, Vault]
